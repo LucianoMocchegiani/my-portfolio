@@ -7,6 +7,7 @@ import twiter from './twiter.png'
 import whatsapp from './whatsapp.png'
 import react,{useState,useEffect} from 'react'
 import emailjs from 'emailjs-com'
+import fondo from './Vector4.png'
 function App() { 
   const imagenesProyectos=["https://camo.githubusercontent.com/6558936db11734287b508089ba329beb8dafbfeac498a993f582a5edd2a5874b/68747470733a2f2f692e706f7374696d672e63632f72704c76594d6e4b2f436170747572612d64652d70616e74616c6c612d64652d323032322d30362d31312d31392d34352d30342e706e67",
   "https://camo.githubusercontent.com/e86680d6cb82db6667a045c9601a31dc749a00ea585841101b4b65fc14c34754/68747470733a2f2f692e706f7374696d672e63632f4331344b445971592f436170747572612d64652d70616e74616c6c612d64652d323032322d30372d30342d32302d31332d32372e706e67"]
@@ -51,6 +52,7 @@ function App() {
   }
   return (
     <div>
+        <div><img className='imagenFondo'src={fondo} alt="imgFondo"/></div>  
         <div className='div-navBar'>
             <a className='ancla sobreMi' href="#sobreMi" >Sobre mi</a>
             <a className='ancla misProyectos' href="#misProyectos" >Mis Proyectos</a>
