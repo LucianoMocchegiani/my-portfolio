@@ -50,16 +50,31 @@ function App() {
       console.log(res);
     })
   }
+  const [desplegar,setDesplegar]= useState(0)
+  const desplegue =()=>{
+    if(desplegar){
+      setDesplegar(false)
+    }else{
+      setDesplegar(true)
+    }
+  }
   return (
     <div>
         <div><img className='imagenFondo'src={fondo} alt="imgFondo"/></div>  
-        <div className='div-navBar'>
+        {!desplegar&&<div className='div-navBar'>
+            <a className='ancla sobreMi oculto' href="#sobreMi" >Sobre mi</a>
+            <a className='ancla misProyectos oculto' href="#misProyectos" >Mis Proyectos</a>
+            <a className='ancla contactame oculto' href="#contactame" >Contactame</a>
+        </div>}
+        {!desplegar&&<button className='desplegar' onClick= {()=>desplegue()}></button>}
+        {desplegar&&<div className='div-navBar div-navBar-button'>
             <a className='ancla sobreMi' href="#sobreMi" >Sobre mi</a>
             <a className='ancla misProyectos' href="#misProyectos" >Mis Proyectos</a>
-            <a className='ancla contactame' href="#contactame" >Contactame</a>
-        </div> 
+            <a className='ancla contactame' href="#contactame" >Contactame</a>   
+        </div>}
+        {desplegar&&<button className='desplegar' onClick= {()=>desplegue()}></button>}
         <div className='hola'>
-          <p>Hola!</p>
+          <p>Hola!</p>  
           <p>Soy Luciano Mocchegiani</p>
           <p>Full Stack Developer</p>
         </div>
@@ -102,7 +117,7 @@ function App() {
         </div>
         <p className='contactame2Title'>Enviame un correo</p>     
         <form onSubmit={enviarMail}>
-          <input type='text'className='entradasCorreo1'id='email'name='email'placeholder='Correo Electronico...'/>
+          <input type='text'className='entradasCorreo1'id='email'name='email'placeholder='Correo electronico...'/>
           <input type='text'className='entradasCorreo2'id='email'name='nombre'placeholder='Su nombre...'/>
           <input type='text'className='entradasCorreo3'id='mensaje'name='mensaje'placeholder='Escriba su mensaje...'/>     
           <button type='submit'className='enviar'>Enviar</button>   
