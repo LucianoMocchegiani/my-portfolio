@@ -445,7 +445,7 @@ html, body {
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
   .imagenFondo{
     width: 100%;
-    height: 2642px;
+    height: 2842px;
   }
   .div-navBar{
     width: 100%;
@@ -531,7 +531,8 @@ html, body {
   .hola{
     position: absolute;
     width: 100%;
-    left: 10%;
+    left: 0%;
+    text-align: center;
     top: 60%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -556,24 +557,27 @@ html, body {
     position: absolute;
     width: 90%;
     left: 5%;
+    text-align: center;
     top: 670px;
   }
   .text2{
     position: absolute;
     width: 90%;
     left: 5%;
-    top: 870px;
+    text-align: center;
+    top: 905px;
   }
   .text3{
     position: absolute;
     width: 90%;
     left: 5%;
-    top: 1160px;
+    text-align: center;
+    top: 1220px;
   }
   .pregunta{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 22px;
     line-height: 27px;
     color: #367785;
@@ -581,7 +585,7 @@ html, body {
   .respuesta{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 22px;
     line-height: 27px;
     color: #000000;
@@ -595,14 +599,15 @@ html, body {
     width: 223px;
     height: 57px;
     left: 43%;
-    top: 1388px;
+    top: 1598px;
   }
   .misProyectosTitle{
     position: absolute;
-    width: 223px;
     height: 57px;
-    left: 30%;
-    top: 1438px;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    top: 1638px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 1000;
@@ -616,7 +621,7 @@ html, body {
     width: 100%;
     height: 70%;
     left: 0%;
-    top: 1511px;
+    top: 1711px;
     background: #367785;
     border-radius: 6px;
   }
@@ -625,7 +630,7 @@ html, body {
     width: 90%;
     height: 54%;
     left: 5%;
-    top: 1560px;
+    top: 1760px;
     border-radius: 6px;
     z-index: 90;
     box-shadow: 15px 7px 7px black;
@@ -635,7 +640,7 @@ html, body {
     width: 16%;
     height: 134px;
     left: 9%;
-    top: 1636px;
+    top: 1836px;
     border-radius: 6px;
     box-shadow: 10px 5px 5px black;
     z-index: 0;
@@ -645,7 +650,7 @@ html, body {
     width: 16%;
     height: 134px;
     left: 75%;
-    top: 1636px;
+    top: 1836px;
     border-radius: 6px;
     box-shadow: 10px 5px 5px black;
     z-index: 0;
@@ -654,8 +659,8 @@ html, body {
     position: absolute;
     width: 90%;
     height: 54%;
-    left: 1%;
-    top: 1540px;
+    left: 0.3%;
+    top: 1740px;
     border-radius: 6px;
     z-index: 90;
     box-shadow: 15px 7px 7px black;
@@ -667,13 +672,13 @@ html, body {
   .buttonCarrusel1{
     position: absolute;
     left: 1%;
-    top: 1690px;
-    font-size: 60px; 
+    top: 1890px;
+    font-size: 50px; 
     background: black;
     color:#FFFFFF;
     border-radius: 8px;
     z-index: 101;
-  }
+  } 
   .buttonCarrusel1:hover{
     background:#FFFFFF ;
     color:black;
@@ -682,8 +687,8 @@ html, body {
   .buttonCarrusel2{
     position: absolute;
     left: 88%;
-    top: 1690px;
-    font-size: 60px;
+    top: 1890px;
+    font-size: 50px;
     background: black;
     color:#FFFFFF;
     border-radius: 8px;
@@ -699,7 +704,7 @@ html, body {
     width: 100%;
     height: 234px;
     left: 0%;
-    top: 1763px;
+    top: 1963px;
     background: rgba(0, 0, 0, 0.79);
     border-radius: 6px;
     z-index: 91;
@@ -713,12 +718,14 @@ html, body {
   .contactameId{
     position: absolute;
     left: 45%;
-    top: 1980px;
+    top: 2180px;
   }
   .contactameTitle{
     position: absolute;
-    left: 30%;
-    top: 2015px;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    top: 2215px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -728,14 +735,14 @@ html, body {
   }
   .icon1{
     position: absolute;
-    left: 5%;
-    top: 2123px;
+    left: 3%;
+    top: 2323px;
     width: 60px;
     height: 60px;
   }
   .icon1:hover{
-    top: 2123px;
-    left: 5.3%;
+    top: 2323px;
+    left: 2.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
@@ -745,14 +752,12 @@ html, body {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 25%;
-    top: 1829px;
-    top: 2129px;
-  
+    left: 23%;
+    top: 2329px;
   }
   .icon2:hover{
-    top: 2129px;
-    left: 25.3%;
+    top: 2329px;
+    left: 22.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
@@ -762,12 +767,12 @@ html, body {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 45%;
-    top: 2126px;
+    left: 43%;
+    top: 2326px;
   }
   .icon3:hover{
-    top: 2126px;
-    left: 45.3%;
+    top: 2326px;
+    left: 42.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
@@ -777,12 +782,12 @@ html, body {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 65%;
-    top: 2129px;
+    left: 63%;
+    top: 2329px;
   }
   .icon4:hover{
-    top: 2129px;
-    left: 65.3%;
+    top: 2329px;
+    left: 62.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
@@ -792,12 +797,12 @@ html, body {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 85%;
-    top: 2126px;
+    left: 83%;
+    top: 2326px;
   }
   .icon5:hover{
-    top: 2126px;
-    left: 85.3%;
+    top: 2326px;
+    left: 82%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
@@ -807,8 +812,10 @@ html, body {
 .contactame2Title{
   position: absolute;
   height: 36px;
-  left: 23%;
-  top: 2220px;
+  width: 100%;
+  left: 0%;
+  text-align: center;
+  top: 2420px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -821,7 +828,7 @@ html, body {
   width: 78%;
   height: 52px;
   left: 10%;
-  top: 2373px;
+  top: 2573px;
   background: transparent;
   border-radius: 6px;
   border-top: none;
@@ -839,7 +846,7 @@ html, body {
   width: 78%;
   height: 52px;
   left: 10%;
-  top: 2303px;
+  top: 2503px;
   background: transparent;
   border-radius: 6px;
   border-top: none;
@@ -857,7 +864,7 @@ html, body {
   width: 80%;
   height: 134px;
   left: 10%;
-  top: 2409px;
+  top: 2609px;
   background: transparent;
   border-radius: 6px;
   border-top: none;
@@ -875,7 +882,7 @@ html, body {
   width: 90%;
   height: 51px;
   left: 5%;
-  top: 2575px;
+  top: 2775px;
   background: #367785;
   border-radius: 6px;
   border-color:transparent;
@@ -896,7 +903,7 @@ html, body {
   width: 100%;
   height: 66px;
   left: 0px;
-  top: 2642px;
+  top: 2842px;
   background: black;
   font-family: 'Inter';
   font-style: normal;
