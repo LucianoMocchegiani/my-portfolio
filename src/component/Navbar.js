@@ -21,9 +21,9 @@ export default function Navbar() {
         </div>}
         {!desplegar&&<img src={iconnav} className='desplegar' onClick= {()=>desplegue()}/>}
         {desplegar&&<div className='div-navBar div-navBar-button'>
-            <a className='ancla sobreMi' href="#sobreMi" >Sobre mi</a>
-            <a className='ancla misProyectos' href="#misProyectos" >Mis Proyectos</a>
-            <a className='ancla contactame' href="#contactame" >Contactame</a>   
+            <a className='ancla sobreMi' href="#sobreMi"onClick= {()=>desplegue()} >Sobre mi</a>
+            <a className='ancla misProyectos' href="#misProyectos" onClick= {()=>desplegue()}>Mis Proyectos</a>
+            <a className='ancla contactame' href="#contactame"onClick= {()=>desplegue()} >Contactame</a>   
         </div>}
         {desplegar&&<img src={iconnavazul} className='desplegar' onClick= {()=>desplegue()}/>}
     </div>

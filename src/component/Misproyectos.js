@@ -48,7 +48,8 @@ export default function Misproyectos(){
               <button className="buttonCarrusel1" onClick={()=>carruselProyectos("<")}>{"<"}</button>
               <button className="buttonCarrusel2" onClick={()=>carruselProyectos(">")}>{">"}</button>
             </div>
-            {proyectoHover&&<div onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]} className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>}
+            <div onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]} className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>
         </div>
     )
 }
+// {proyectoHover&&
