@@ -7,7 +7,9 @@ import twiter from './twiter.png'
 import whatsapp from './whatsapp.png'
 import react,{useState,useEffect} from 'react'
 import emailjs from 'emailjs-com'
-import fondo from './Vector4.png'
+import iconnav from './iconnav.png'
+import iconnavazul from './iconnavazul.png'
+import fondo from './Vector5.png'
 function App() { 
   const imagenesProyectos=["https://camo.githubusercontent.com/6558936db11734287b508089ba329beb8dafbfeac498a993f582a5edd2a5874b/68747470733a2f2f692e706f7374696d672e63632f72704c76594d6e4b2f436170747572612d64652d70616e74616c6c612d64652d323032322d30362d31312d31392d34352d30342e706e67",
   "https://camo.githubusercontent.com/e86680d6cb82db6667a045c9601a31dc749a00ea585841101b4b65fc14c34754/68747470733a2f2f692e706f7374696d672e63632f4331344b445971592f436170747572612d64652d70616e74616c6c612d64652d323032322d30372d30342d32302d31332d32372e706e67"]
@@ -66,13 +68,13 @@ function App() {
             <a className='ancla misProyectos oculto' href="#misProyectos" >Mis Proyectos</a>
             <a className='ancla contactame oculto' href="#contactame" >Contactame</a>
         </div>}
-        {!desplegar&&<button className='desplegar' onClick= {()=>desplegue()}></button>}
+        {!desplegar&&<img src={iconnav} className='desplegar' onClick= {()=>desplegue()}/>}
         {desplegar&&<div className='div-navBar div-navBar-button'>
             <a className='ancla sobreMi' href="#sobreMi" >Sobre mi</a>
             <a className='ancla misProyectos' href="#misProyectos" >Mis Proyectos</a>
             <a className='ancla contactame' href="#contactame" >Contactame</a>   
         </div>}
-        {desplegar&&<button className='desplegar' onClick= {()=>desplegue()}></button>}
+        {desplegar&&<img src={iconnavazul} className='desplegar' onClick= {()=>desplegue()}/>}
         <div className='hola'>
           <p>Hola!</p>  
           <p>Soy Luciano Mocchegiani</p>
@@ -105,7 +107,7 @@ function App() {
         {!proyectoHover&&<a href={linksProyectos[carrusel]}><img className='imagenProyectoSig' src={imagenesProyectos[carruselRotation("siguiente")]} alt={"imagen "+carruselRotation("siguiente")}></img></a>}
         <button className="buttonCarrusel1" onClick={()=>carruselProyectos("<")}>{"<"}</button>
         <button className="buttonCarrusel2" onClick={()=>carruselProyectos(">")}>{">"}</button>
-        {proyectoHover&&<div className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>}
+        {proyectoHover&&<div onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]} className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>}
         <div className='contactameId'id='contactame'></div>
         <p className='contactameTitle' >Contactame</p>
         <div className='iconosRedes'>
