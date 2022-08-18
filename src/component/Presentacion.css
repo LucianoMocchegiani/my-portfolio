@@ -1,0 +1,51 @@
+
+.imagen{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    left: 30%;
+    top: 150px;
+}
+.hola{
+    position: absolute;
+    width: 30%;
+    height: 330px;
+    left: 5%;
+    top: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;  
+    line-height: 61px;
+    color: #367785;
+    z-index: 90;
+}
+
+@media screen and (max-width: 600px) {
+ /* ///////////////////////////////// */
+    .imagen{
+      position: absolute;
+      width: 70%;
+      height: 30%;
+      left: 10%;
+      top: 20%;
+    }
+    .hola{
+      position: absolute;
+      width: 100%;
+      left: 0%;
+      text-align: center;
+      top: 60%;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;  
+      line-height: 61px;
+      color: #367785;
+      z-index: 90;
+    }
+    .hola p{
+      margin: 0;
+      padding: 0;
+    }
+}
