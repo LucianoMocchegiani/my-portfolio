@@ -44,9 +44,9 @@
       top: 30%;
     }
     .desplegar{
-      z-index: 1001;
-    }
-    
+      position: absolute;
+      top:-40px;
+    }   
 }
 @media screen and (max-width: 600px) {
     .div-navBar{

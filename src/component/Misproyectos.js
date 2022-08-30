@@ -37,18 +37,20 @@ export default function Misproyectos(){
     const [proyectoHover, setProyectoHover] = useState(false);
 
     return(
-        <div>
+        <div className="divProyectos">
             <div className='misProyectosId'id='misProyectos'></div>
             <div className='misProyectosTitle'><p>Mis Proyectos</p></div>
-            <div className='divProyecto'></div>
-            <a href={linksProyectos[carrusel]}><img className='imagenProyectoAnt' src={imagenesProyectos[carruselRotation("anterior")]} alt={"imagen "+carruselRotation("anterior")}></img></a>
-            <a onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]}><img className='imagenProyecto' src={imagenesProyectos[carrusel]} alt={"imagen "+carrusel}></img></a>
-            <a href={linksProyectos[carrusel]}><img className='imagenProyectoSig' src={imagenesProyectos[carruselRotation("siguiente")]} alt={"imagen "+carruselRotation("siguiente")}></img></a>
-            <div className='contenedor-botones'>
-              <button className="buttonCarrusel1" onClick={()=>carruselProyectos("<")}>{"<"}</button>
-              <button className="buttonCarrusel2" onClick={()=>carruselProyectos(">")}>{">"}</button>
+            <div className='divProyecto'>
+              <div className='contenedor-botones'>
+                <button className="buttonCarrusel1" onClick={()=>carruselProyectos("<")}>{"<"}</button>
+                <button className="buttonCarrusel2" onClick={()=>carruselProyectos(">")}>{">"}</button>
+              </div>
+              <a href={linksProyectos[carrusel]}><img className='imagenProyectoAnt' src={imagenesProyectos[carruselRotation("anterior")]} alt={"imagen "+carruselRotation("anterior")}></img></a>
+              <a onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]}><img className='imagenProyecto' src={imagenesProyectos[carrusel]} alt={"imagen "+carrusel}></img></a>
+              <a href={linksProyectos[carrusel]}><img className='imagenProyectoSig' src={imagenesProyectos[carruselRotation("siguiente")]} alt={"imagen "+carruselRotation("siguiente")}></img></a>
+              <div onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]} className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>
             </div>
-            <div onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]} className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>
+            
         </div>
     )
 }

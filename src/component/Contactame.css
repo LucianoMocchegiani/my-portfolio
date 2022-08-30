@@ -1,90 +1,79 @@
-.contactameId{
-    position: absolute;
-    left: 45%;
-    top: 1660px;
+.divContactame{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .contactameTitle{
-    position: absolute;
-    left: 43%;
-    top: 1735px;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: #367785;
+    text-align: center;
 }
-.icon1{
-    position: absolute;
+.iconosRedes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.icon1{ 
     left: 35%;
     top: 1823px;
     width: 60px;
     height: 60px;
 }
 .icon1:hover{
-    top: 1803px;
-    left: 34.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
     transition: all 0.5s;
 }
 .icon2{
-    position: absolute;
     width: 60px;
     height: 60px;
     left: 42%;
     top: 1829px;
-
 }
 .icon2:hover{
-    top: 1809px;
-    left: 41.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
     transition: all 0.5s;
 }
 .icon3{
-    position: absolute;
     width: 60px;
     height: 60px;
     left: 49%;
     top: 1826px;
 }
 .icon3:hover{
-    top: 1806px;
-    left: 48.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
     transition: all 0.5s;
 }
 .icon4{
-    position: absolute;
     width: 60px;
     height: 60px;
     left: 56%;
     top: 1829px;
 }
 .icon4:hover{
-    top: 1809px;
-    left: 55.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
     transition: all 0.5s;
 }
-.icon5{
-    position: absolute;
+.icon5{  
     width: 60px;
     height: 60px;
     left: 62%;
     top: 1826px;
 }
 .icon5:hover{
-    top: 1806px;
-    left: 61.3%;
     margin:10px;
     background: #000000;
     border-radius: 6px;
@@ -92,23 +81,24 @@
 }
   /* ///////////////////////////////// */
 .contactame2Title{
-    position: absolute;
-    height: 36px;
-    left: 39%;
-    top: 1930px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #367785;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #367785;
+}
+.form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .entradasCorreo1{
-    position: absolute;
     width: 35%;
     height: 52px;
-    left: 10%;
-    top: 2003px;
     background: transparent;
     border-radius: 6px;
     border-top: none;
@@ -122,11 +112,8 @@
 }
 .entradasCorreo1:focus{outline: none;}
 .entradasCorreo2{
-    position: absolute;
     width: 35%;
     height: 52px;
-    left: 55%;
-    top: 2003px;
     background: transparent;
     border-radius: 6px;
     border-top: none;
@@ -140,11 +127,8 @@
 }
 .entradasCorreo2:focus{outline: none;}
 .entradasCorreo3{
-    position: absolute;
     width: 80%;
     height: 134px;
-    left: 10%;
-    top: 2069px;
     background: transparent;
     border-radius: 6px;
     border-top: none;
@@ -158,11 +142,9 @@
 }
 .entradasCorreo3:focus{outline: none;}
 .enviar{
-    position: absolute;
-    width: 133px;
+    margin-top: 3%;
+    width: 25%;
     height: 51px;
-    left: 45%;
-    top: 2225px;
     background: #367785;
     border-radius: 6px;
     border-color:transparent;
@@ -182,193 +164,60 @@
 @media screen and (max-width: 600px) {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
     /* ///////////////////////////////// */
-    .oculto{
-      color: transparent;
-      position: absolute;
-      top: -40px;
-    }
-    /* ///////////////////////////////// */
-    .contactameId{
-      position: absolute;
-      left: 45%;
-      top: 2160px;
-    }
-    .contactameTitle{
-      position: absolute;
-      width: 100%;
-      left: 0%;
-      text-align: center;
-      top: 2215px;
+    .entradasCorreo1{
+      width: 85%;
+      height: 52px;
+      background: transparent;
+      border-radius: 6px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom-width: 2px;
+      border-bottom-color: black;  
+      padding: 5px;
+      cursor: pointer;  
+      font-size: 22px; 
+  }
+  .entradasCorreo2{
+      width: 85%;
+      height: 52px;
+      background: transparent;
+      border-radius: 6px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom-width: 2px;
+      border-bottom-color: black;  
+      padding: 5px;
+      cursor: pointer;   
+      font-size: 22px;
+  }
+  .entradasCorreo3{
+      width: 85%;
+      height: 134px;
+      background: transparent;
+      border-radius: 6px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom-width: 2px;
+      border-bottom-color: black;  
+      padding: 5px;
+      cursor: pointer;  
+      font-size: 22px; 
+  }
+  .enviar{
+      margin-top: 3%;
+      width: 95%;
+      height: 51px;
+      background: #367785;
+      border-radius: 6px;
+      border-color:transparent;
       font-family: 'Poppins', sans-serif;
       font-style: normal;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
-      color: #367785;
-    }
-    .icon1{
-      position: absolute;
-      left: 3%;
-      top: 2323px;
-      width: 60px;
-      height: 60px;
-    }
-    .icon1:hover{
-      top: 2323px;
-      left: 2.3%;
-      margin:10px;
-      background: #000000;
-      border-radius: 6px;
-      transition: all 0.5s;
-    }
-    .icon2{
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      left: 23%;
-      top: 2329px;
-    }
-    .icon2:hover{
-      top: 2329px;
-      left: 22.3%;
-      margin:10px;
-      background: #000000;
-      border-radius: 6px;
-      transition: all 0.5s;
-    }
-    .icon3{
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      left: 43%;
-      top: 2326px;
-    }
-    .icon3:hover{
-      top: 2326px;
-      left: 42.3%;
-      margin:10px;
-      background: #000000;
-      border-radius: 6px;
-      transition: all 0.5s;
-    }
-    .icon4{
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      left: 63%;
-      top: 2329px;
-    }
-    .icon4:hover{
-      top: 2329px;
-      left: 62.3%;
-      margin:10px;
-      background: #000000;
-      border-radius: 6px;
-      transition: all 0.5s;
-    }
-    .icon5{
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      left: 83%;
-      top: 2326px;
-    }
-    .icon5:hover{
-      top: 2326px;
-      left: 82%;
-      margin:10px;
-      background: #000000;
-      border-radius: 6px;
-      transition: all 0.5s;
-    }
-    /* ///////////////////////////////// */
-  .contactame2Title{
-    position: absolute;
-    height: 36px;
-    width: 100%;
-    left: 0%;
-    text-align: center;
-    top: 2420px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #367785;
-  }
-  .entradasCorreo1{
-    position: absolute;
-    width: 78%;
-    height: 52px;
-    left: 10%;
-    top: 2573px;
-    background: transparent;
-    border-radius: 6px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-width: 2px;
-    border-bottom-color: black;  
-    padding: 5px;
-    cursor: pointer;  
-    font-size: 22px; 
-  }
-  .entradasCorreo1:focus{outline: none;}
-  .entradasCorreo2{
-    position: absolute;
-    width: 78%;
-    height: 52px;
-    left: 10%;
-    top: 2503px;
-    background: transparent;
-    border-radius: 6px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-width: 2px;
-    border-bottom-color: black;  
-    padding: 5px;
-    cursor: pointer;   
-    font-size: 22px;
-  }
-  .entradasCorreo2:focus{outline: none;}
-  .entradasCorreo3{
-    position: absolute;
-    width: 80%;
-    height: 134px;
-    left: 10%;
-    top: 2609px;
-    background: transparent;
-    border-radius: 6px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-width: 2px;
-    border-bottom-color: black;  
-    padding: 5px;
-    cursor: pointer;  
-    font-size: 22px; 
-  }
-  .entradasCorreo3:focus{outline: none;}
-  .enviar{
-    position: absolute;
-    width: 90%;
-    height: 51px;
-    left: 5%;
-    top: 2775px;
-    background: #367785;
-    border-radius: 6px;
-    border-color:transparent;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
-  }
-  .enviar:hover{
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      color: #FFFFFF;
   }
 }

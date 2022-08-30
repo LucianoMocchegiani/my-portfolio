@@ -1,41 +1,42 @@
-
+.divPresentacion{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .imagen{
-    position: absolute;
-    width: 60%;
-    height: 50%;
-    left: 30%;
-    top: 150px;
+  margin-top:10%;
+  width: 60%;
 }
 .hola{
-    position: absolute;
-    width: 30%;
-    height: 330px;
-    left: 5%;
-    top: 10%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;  
-    line-height: 61px;
-    color: #367785;
-    z-index: 90;
+  margin-top:7%;
+  margin-left:5%;
+  width: 35%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;  
+  line-height: 61px;
+  color: #367785;
+  z-index: 90;
 }
+
 
 @media screen and (max-width: 600px) {
  /* ///////////////////////////////// */
+    .divPresentacion{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
     .imagen{
-      position: absolute;
-      width: 70%;
-      height: 30%;
-      left: 10%;
-      top: 20%;
+      width: 90%;
+      margin:5%;
     }
     .hola{
-      position: absolute;
-      width: 100%;
-      left: 0%;
-      text-align: center;
-      top: 60%;
+      width: 90%;
+      margin-top: 20%;
+      margin-left:5%;
+      margin-right:5%;
       font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 800;
@@ -43,9 +44,10 @@
       line-height: 61px;
       color: #367785;
       z-index: 90;
+      text-align: center
     }
     .hola p{
-      margin: 0;
-      padding: 0;
+      margin:0;
+      padding:0;
     }
 }

@@ -6,10 +6,10 @@ import Sobremi from './component/Sobremi'
 import Misproyectos from './component/Misproyectos'
 import Contactame from './component/Contactame'
 function App() { 
- 
+
   return (
     <div className="contenedor-general">
-      <div><img className='imagenFondo'src={fondo} alt="imgFondo"/></div>  
+      {/* <div><img className='imagenFondo'src={fondo} alt="imgFondo"/></div>   */}
       <Navbar/>
       <Presentacion/>
       <Sobremi/>

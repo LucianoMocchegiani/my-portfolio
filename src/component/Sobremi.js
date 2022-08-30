@@ -3,7 +3,7 @@ import './Sobremi.css';
 
 export default function Sobremi(){
     return(
-        <div>
+        <div className="divSobremi">
             <div className='sobreMiId'id='sobreMi'></div>
             <div className='text1'>
                 <p className='pregunta'>¿Quien soy?</p>
