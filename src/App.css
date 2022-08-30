@@ -10,6 +10,8 @@ html, body {
   background-image: url('./Vector5.png');
   background-position: 100% 100%;
   background-repeat: no-repeat;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 .footer{
   width: 100%;
