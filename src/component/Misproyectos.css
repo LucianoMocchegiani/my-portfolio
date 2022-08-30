@@ -5,6 +5,8 @@
   flex-wrap: wrap;
 }
   .misProyectosTitle{
+    padding-bottom: 0;
+    margin-bottom: 0;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -17,6 +19,7 @@
   .divProyecto{
     width: 90%;
     margin: 5%;
+    margin-top: 0;
     background: #367785;
     border-radius: 6px;
     
