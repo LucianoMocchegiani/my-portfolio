@@ -18,8 +18,40 @@
   line-height: 61px;
   color: #367785;
   z-index: 90;
+  /* animation-name:aparecer2 ;
+  animation-duration: 3s;
+  animation-iteration-count: 1; */
+  /* animation-iteration-count: 0; cantidad de veces a ejecutar de 0 a infinite */
+  /* animation-direction:alternate-reverse; */
+  /* animation-fill-mode: forwards; los estilos quedan como al final de la animacion */
+  /* animation-fill-mode: backwards; aplica estilos iniciales a la nimacion */
+  /* animation-fill-mode: both; forwards y backwards juntos */
+  /* animation-delay: 2s;  denora para empezar la animacion*/
+  /* animation-timing-function: ease;  aumenta o baja el tiempo de la animacion en las distintas etapas*/
+  /* animation: alternate infinite aparecer2 1s 1s; */
+  /* animation: alternate infinite aparecer2 1s 1s;*/
 }
-
+.hola:hover{
+  animation-play-state: paused;
+}
+@keyframes color {
+  0%{ background-color: #367785; }
+  100%{background-color: aquamarine;}
+}
+@keyframes aparecer {
+  0%{ transform: scale(1); }
+  20%{ transform: scale(1.3); }
+  40%{ transform: scale(1.6); }
+  60%{ transform: scale(1.9); }
+  70%{ transform: scale(1); }
+  80%{ transform: scale(.5); }
+  90%{ transform: scale(.2); }
+  100%{ transform: scale(1); }
+}
+@keyframes aparecer2 {
+  0%{ transform:  translateX(100%); }
+  100%{ transform:  translateX(0%); }
+}
 
 @media screen and (max-width: 600px) {
  /* ///////////////////////////////// */

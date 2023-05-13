@@ -6,7 +6,7 @@
       position: fixed;
       top: 0px;
       z-index: 1000;    
-      background-color: black;
+      background-color: #fff;
     }
     .ancla{
       text-decoration: none;
@@ -16,7 +16,7 @@
       font-weight: 800;
       font-size: 22px;
       line-height: 36px;
-      color: #FFFFFF;
+      color: black;
     }
     .ancla:hover{
       text-decoration: underline;
@@ -57,7 +57,7 @@
       position: fixed;
       top: 0px;
       z-index: 103;
-      background-color: black;
+      background-color: #fff;
     }
     .div-navBar-button{
       height: 50%;
@@ -84,7 +84,7 @@
       font-weight: 800;
       font-size: 19px;
       line-height: 36px;
-      color: #FFFFFF;
+      color: black;
     }
     .ancla:hover{
       text-decoration: underline;
