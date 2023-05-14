@@ -9,9 +9,9 @@ export default function Misproyectos(){
     const imagenesProyectos=[imagen1,
     imagen2,imagen3]
     const linksProyectos=["https://pi-food-yqzu8pfxg-timberli.vercel.app/","https://proyecto-final-orcin-seven.vercel.app/",'https://businessadmin.vercel.app/']
-    const resumenesProyectos=["HenryFood: Tecnologías React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. es una app donde se crean y se visualizan recetas de comidas.",
+    const resumenesProyectos=["HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas, utilice las siguientes tecnologias React Redux en el frontend y Node.js, Express.js y Sequelize en el backend.",
     "Timberli:   Hice esta app en conjunto con un grupo de compañeros utilizamos git  usamos las tecnologías React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. la idea de la app es ser una red social donde software developers Jr puedan subir y exponer su portfolio de proyectos, para mostrarse al mundo y recibir feedback.",
-    "Busines Admin: Web y App mobile para gestionar negocios comerciales."]
+    "Busines Admin:   Web y App mobile para gestionar negocios comerciales, las tecnologias principales aplicadas son React , React Native con Expo y Firebase. "]
     const [carrusel, setCarrusel] = useState(0);
     const carruselProyectos=(valor)=>{
       if(valor==">"&&carrusel==imagenesProyectos.length-1){
