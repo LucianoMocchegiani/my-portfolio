@@ -8,7 +8,7 @@ export default function Presentacion() {
             <div className='hola'>
                 <p>Hola!</p>  
                 <p>Soy Luciano Mocchegiani</p>
-                <p>Full Stack Developer</p>
+                <p>Desarrollador Web</p>
             </div>
            <img className='imagen' src={Imagen} alt="imagen"/>                 
         </div>

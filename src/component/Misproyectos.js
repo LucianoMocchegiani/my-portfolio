@@ -1,61 +1,71 @@
-import react,{useState} from 'react'
+import {useState} from 'react'
 import './Misproyectos.css';
 import imagen3 from '../business-admin-imagen.png'
 import imagen2 from '../timberli-project.png'
 import imagen1 from '../henry-food.png'
 
-export default function Misproyectos(){
-    
-    const imagenesProyectos=[imagen1,
-    imagen2,imagen3]
-    const linksProyectos=["https://pi-food-yqzu8pfxg-timberli.vercel.app/","https://proyecto-final-orcin-seven.vercel.app/",'https://businessadmin.vercel.app/']
-    const resumenesProyectos=["HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas, utilice las siguientes tecnologias React Redux en el frontend y Node.js, Express.js y Sequelize en el backend.",
-    "Timberli:   Hice esta app en conjunto con un grupo de compañeros utilizamos git  usamos las tecnologías React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. la idea de la app es ser una red social donde software developers Jr puedan subir y exponer su portfolio de proyectos, para mostrarse al mundo y recibir feedback.",
-    "Busines Admin:   Web y App mobile para gestionar negocios comerciales, las tecnologias principales aplicadas son React , React Native con Expo y Firebase. "]
-    const [carrusel, setCarrusel] = useState(0);
-    const carruselProyectos=(valor)=>{
-      if(valor==">"&&carrusel==imagenesProyectos.length-1){
-        setCarrusel(0)
-      }else if(valor=="<"&&carrusel==0){
-        setCarrusel(imagenesProyectos.length-1)
-      }else if (valor==">"){
-        setCarrusel(carrusel+1)
-      }else if(valor=="<"){
-        setCarrusel(carrusel-1)
-      }
-    }
-    const carruselRotation =(f)=>{
-      if (carrusel===0&& f ==="anterior"){
-        return imagenesProyectos.length-1
-      }
-      else if (carrusel===imagenesProyectos.length-1&& f ==="siguiente"){
-        return 0
-      }
-      else if(f === "siguiente"){
-        return carrusel+1
-      }
-      else if(f ==="anterior"){
-        return carrusel-1
-      }
-    }
-    const [proyectoHover, setProyectoHover] = useState(false);
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-    return(
-        <div className="divProyectos">
-            <div className='misProyectosId'id='misProyectos'></div>
-            <div className='misProyectosTitle'><p>Mis Proyectos</p></div>
-            <div className='divProyecto'>
-              <div className='contenedor-botones'>
-                <button className="buttonCarrusel1" onClick={()=>carruselProyectos("<")}>{"<"}</button>
-                <button className="buttonCarrusel2" onClick={()=>carruselProyectos(">")}>{">"}</button>
-              </div>
-              <a href={linksProyectos[carrusel]}><img className='imagenProyectoAnt' src={imagenesProyectos[carruselRotation("anterior")]} alt={"imagen "+carruselRotation("anterior")}></img></a>
-              <a onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]}><img className='imagenProyecto' src={imagenesProyectos[carrusel]} alt={"imagen "+carrusel}></img></a>
-              <a href={linksProyectos[carrusel]}><img className='imagenProyectoSig' src={imagenesProyectos[carruselRotation("siguiente")]} alt={"imagen "+carruselRotation("siguiente")}></img></a>
-              <div onMouseOver={()=>setProyectoHover(true)} onMouseOut={()=>setProyectoHover(false)} href={linksProyectos[carrusel]} className='divResumeProyecto'><p>{resumenesProyectos[carrusel]}</p></div>
+export default function Misproyectos(){
+    const objProyect=[{link:"https://pi-food-yqzu8pfxg-timberli.vercel.app/",imagen:imagen1,resumen:"HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas, utilice las siguientes tecnologias React Redux en el frontend y Node.js, Express.js y Sequelize en el backend."}
+      ,{link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   La idea de la app es ser una red social donde software developers Jr puedan subir y exponer su portfolio de proyectos, para mostrarse al mundo y recibir feedback. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. "}
+      ,{link:'https://businessadmin.vercel.app/',imagen:imagen3,resumen:"Busines Admin:   Web y App mobile para gestionar negocios comerciales, las tecnologias principales aplicadas son React , React Native con Expo y Firebase. "}]
+
+      var settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
+
+    return(<>
+        <h1 className='title-mis-proyectos'id='misProyectos'>Mis proyectos </h1>
+        <div className="misproyectos-container"> 
+        <Slider {...settings}>
+        {objProyect.map((item)=>(
+          <a className='card' href={item.link}>
+            <div className='card-top'>
+              <img src={item.imagen} alt={item.name} width={'500px'} height={'auto'}/>
+              <h1>{item.name}</h1>
             </div>
-            
+            <div className='card-bottom'>
+              <p>{item.resumen}</p>
+            </div>
+          </a>
+        ))}
+        </Slider>
         </div>
+        </>
     )
 }
 // {proyectoHover&&
