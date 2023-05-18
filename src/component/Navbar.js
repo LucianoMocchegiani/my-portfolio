@@ -1,31 +1,19 @@
 import './Navbar.css';
-import react,{useState} from 'react'
-import iconnav from '../iconnav.png'
-import iconnavazul from '../iconnavazul.png'
+import {useState} from 'react'
+import Burger from './Burger'
 
 export default function Navbar() { 
-  const [desplegar,setDesplegar]= useState(0)
-  const desplegue =()=>{
-    if(desplegar){
-      setDesplegar(false)
-    }else{
-      setDesplegar(true)
-    }
+  const [clicked,setClicked] =useState(false)
+  const handleClicked =()=>{
+      setClicked(!clicked)
   }
+
   return (
-    <div>
-        {!desplegar&&<div className='div-navBar'>
-            <a className='ancla sobreMi oculto' href="#sobreMi" >Sobre mi</a>
-            <a className='ancla misProyectos oculto' href="#misProyectos" >Mis Proyectos</a>
-            <a className='ancla contactame oculto' href="#contactame" >Contactame</a>
-        </div>}
-        {!desplegar&&<img src={iconnav} className='desplegar' onClick= {()=>desplegue()}/>}
-        {desplegar&&<div className='div-navBar div-navBar-button'>
-            <a className='ancla sobreMi' href="#sobreMi"onClick= {()=>desplegue()} >Sobre mi</a>
-            <a className='ancla misProyectos' href="#misProyectos" onClick= {()=>desplegue()}>Mis Proyectos</a>
-            <a className='ancla contactame' href="#contactame"onClick= {()=>desplegue()} >Contactame</a>   
-        </div>}
-        {desplegar&&<img src={iconnavazul} className='desplegar' onClick= {()=>desplegue()}/>}
+    <div className={clicked?'container-navBar active-navBar':'container-navBar'}>     
+        <div className='burger-navBar'><Burger clicked={clicked} handleClicked={handleClicked}/></div>
+            <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#sobreMi" ><p className='textButton-Navbar'>Sobre mi</p></a>
+            <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#misProyectos" ><p className='textButton-Navbar'>Mis Proyectos</p></a>
+            <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#contactame" ><p className='textButton-Navbar'>Contactame</p></a>       
     </div>
   )
 }
