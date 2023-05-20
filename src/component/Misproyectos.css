@@ -5,7 +5,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   height: auto;
-  background-color: rgba(33, 80, 199, 0.38)
+  /* background-color: rgba(33, 80, 199, 0.38) */
 }
 .slick-slide > div {
   margin: 0 10px;
@@ -13,6 +13,7 @@
 .slick-list {
   margin: 0 -10px;
 }
+
 .card{
   border: 1px solid #fff;
   border-radius: 8px;
@@ -20,10 +21,12 @@
   height: 450px;
   text-decoration: none;
   color: black;
+  font-weight: 400;
   transition: 0.6s;
 }
 .card:hover{
   background-color: #367785;;
+  font-weight: 400;
   color: white;
 }
 .card-top h1 {
@@ -40,16 +43,17 @@
 
 .title-mis-proyectos{
   margin-top: 6%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   width: 100%;  
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: proxima-nova, sans-serif;
+  font-weight:500;
   font-style: normal;
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color: #367785;
+  color: rgb(52, 51, 72);
 }
+
 @media screen and (max-width: 900px) {
   .card-bottom p{
     font-size: 12px;
@@ -63,3 +67,9 @@
     height: 380px;
   }
 }
+.slick-next{
+  background-color: #367785;
+  color: #367785;
+  z-index: 100;
+}
+.slick-prev{}

@@ -1,35 +1,40 @@
 .divPresentacion{
+  padding-top: 5%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
 .imagen{
   margin-top:10%;
   width: 60%;
 }
+.title{
+  font-size: 40px;
+  color: rgb(52, 51, 72);
+  /* color: #367785; */
+  font-family: proxima-nova, sans-serif;
+  font-weight:750;
+  font-style: normal;
+  padding: 0;
+  margin-bottom: -20px ;
+  
+}
+.subTitle{
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: rgb(68, 70, 73);
+  font-weight: 600;
+}
 .hola{
   margin-top:7%;
   margin-left:5%;
-  width: 35%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;  
-  line-height: 61px;
-  color: #367785;
-  z-index: 90;
-  /* animation-name:aparecer2 ;
-  animation-duration: 3s;
-  animation-iteration-count: 1; */
-  /* animation-iteration-count: 0; cantidad de veces a ejecutar de 0 a infinite */
-  /* animation-direction:alternate-reverse; */
-  /* animation-fill-mode: forwards; los estilos quedan como al final de la animacion */
-  /* animation-fill-mode: backwards; aplica estilos iniciales a la nimacion */
-  /* animation-fill-mode: both; forwards y backwards juntos */
-  /* animation-delay: 2s;  denora para empezar la animacion*/
-  /* animation-timing-function: ease;  aumenta o baja el tiempo de la animacion en las distintas etapas*/
-  /* animation: alternate infinite aparecer2 1s 1s; */
-  /* animation: alternate infinite aparecer2 1s 1s;*/
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hola:hover{
   animation-play-state: paused;
@@ -55,6 +60,15 @@
 
 @media screen and (max-width: 600px) {
  /* ///////////////////////////////// */
+    .title{
+      width: 100%;
+      font-size: 25px;}
+    .subTitle{
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: rgb(68, 70, 73);
+      font-weight: 600;
+    }
     .divPresentacion{
       width: 100%;
       display: flex;
@@ -71,15 +85,7 @@
       margin-right:5%;
       font-family: 'Poppins', sans-serif;
       font-style: normal;
-      font-weight: 800;
-      font-size: 30px;  
-      line-height: 61px;
       color: #367785;
       z-index: 90;
-      text-align: center
-    }
-    .hola p{
-      margin:0;
-      padding:0;
     }
 }

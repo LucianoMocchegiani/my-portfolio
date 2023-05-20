@@ -2,106 +2,31 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .contactameTitle{
-    margin-top: 8%;
+    margin-top: 10%;
     margin-bottom: 5%;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    font-family: proxima-nova, sans-serif;
+    font-weight:500;
     font-style: normal;
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: #367785;
+    color: rgb(52, 51, 72);
     text-align: center;
 }
-.iconosRedes{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-}
-.icon1{ 
-    left: 35%;
-    top: 1823px;
-    width: 60px;
-    height: 60px;
-}
-.icon1:hover{
-    margin:10px;
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
-}
-.icon2{
-    width: 60px;
-    height: 60px;
-    left: 42%;
-    top: 1829px;
-}
-.icon2:hover{
-    margin:10px;
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
-}
-.icon3{
-    width: 60px;
-    height: 60px;
-    left: 49%;
-    top: 1826px;
-}
-.icon3:hover{
-    margin:10px;
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
-}
-.icon4{
-    width: 60px;
-    height: 60px;
-    left: 56%;
-    top: 1829px;
-}
-.icon4:hover{
-    margin:10px;
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
-}
-.icon5{  
-    width: 60px;
-    height: 60px;
-    left: 62%;
-    top: 1826px;
-}
-.icon5:hover{
-    margin:10px;
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
-}
   /* ///////////////////////////////// */
-.contactame2Title{
-    margin-top: 6%;
-    margin-bottom: 5%;
-  width: 100%;  
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #367785;
-}
+
 .form{
+  margin-bottom: 5%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .entradasCorreo1{
-    width: 35%;
+    width: 30%;
     height: 52px;
     background: transparent;
     border-radius: 6px;
@@ -116,7 +41,7 @@
 }
 .entradasCorreo1:focus{outline: none;}
 .entradasCorreo2{
-    width: 35%;
+    width: 30%;
     height: 52px;
     background: transparent;
     border-radius: 6px;
@@ -147,81 +72,51 @@
 .entradasCorreo3:focus{outline: none;}
 .enviar{
     margin-top: 3%;
-    width: 25%;
+    width: 20%;
     height: 51px;
-    background: #367785;
-    border-radius: 6px;
-    border-color:transparent;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "europa", sans-serif;
+    color: #1a6b91;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1a6b91;
+    padding: 13px;
+    transition: 0.2s;
 }
 .enviar:hover{
-    background: #000000;
-    border-radius: 6px;
-    transition: all 0.5s;
+    background-color: #1a6b91;
+    color: white
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 700px) {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
     /* ///////////////////////////////// */
+    .contactameTitle{
+        font-size: 20px;
+        width: 80%;
+        margin-top: 20%;
+        height: auto;
+    }
     .entradasCorreo1{
-      width: 85%;
+      width: 80%;
       height: 52px;
-      background: transparent;
-      border-radius: 6px;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom-width: 2px;
-      border-bottom-color: black;  
-      padding: 5px;
-      cursor: pointer;  
-      font-size: 22px; 
-  }
+    }
   .entradasCorreo2{
-      width: 85%;
+      width: 80%;
       height: 52px;
-      background: transparent;
-      border-radius: 6px;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom-width: 2px;
-      border-bottom-color: black;  
-      padding: 5px;
-      cursor: pointer;   
-      font-size: 22px;
-  }
+    }
   .entradasCorreo3{
-      width: 85%;
+      width: 80%;
       height: 134px;
-      background: transparent;
-      border-radius: 6px;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom-width: 2px;
-      border-bottom-color: black;  
-      padding: 5px;
-      cursor: pointer;  
-      font-size: 22px; 
-  }
+    }
   .enviar{
       margin-top: 3%;
-      width: 95%;
+      width: 85%;
       height: 51px;
-      background: #367785;
-      border-radius: 6px;
-      border-color:transparent;
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 30px;
-      color: #FFFFFF;
   }
 }

@@ -6,16 +6,17 @@ html, body {
   overflow-x: hidden !important;
 }
 /* ///////////////////////////////// */
-.contenedor-general{
+/* .contenedor-general{
   background-image: url('./Vector5.png');
   background-position: 100% 100%;
   background-repeat: no-repeat;
-}
+} */
 .footer{
   width: 100%;
   margin-top:3%;
-  padding:1%;
-  background: black;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: #367785;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -41,3 +42,54 @@ html, body {
   /* ///////////////////////////////// */
   /* ///////////////////////////////// */
 } 
+.footertext{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 01px;
+}
+
+.icon1:hover{
+    background: #293ee0;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.icon2:hover{
+  background: black;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+:root {
+--white: #fff;
+--blue: #3051f1;
+--purple: #c92bb7;
+--red: #f73344;
+--orange: #fa8e37;
+--yellow: #fcdf8f;
+--yellow_to: #fbd377;
+}
+.icon3:hover{
+  background: linear-gradient(190deg,blue, transparent ), radial-gradient(red, transparent);
+  background: radial-gradient(
+    circle farthest-corner at 28% 100%,
+    var(--yellow) 0%,
+    var(--yellow_to) 10%,
+    var(--orange) 22%,
+    var(--red) 35%,
+    transparent 65%
+  ), linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
+  border-radius: 6px;
+  transition: all 0.5s;
+  
+}
+
+.icon4:hover{
+  background: #3279af;
+  transition: all 0.5s;
+}
+
+.icon5:hover{
+  background: rgb(26, 245, 117);
+  border-radius: 6px;
+  transition: all 0.5s;
+}
