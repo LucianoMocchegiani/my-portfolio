@@ -3,7 +3,8 @@ import './Contactame.css';
 import emailjs from 'emailjs-com'
 
 export default function Contactame(){
-    
+    window.scroll(0,0)
+
     const enviarMail = (e)=>{       
         e.preventDefault();
         emailjs.sendForm('service_50e21pu','template_fc3ok68',e.target,'0o8mcv869UgSykydv')
@@ -16,7 +17,7 @@ export default function Contactame(){
     return(     
         <div className="divContactame">
             <div className='contactameId'id='contactame'></div>
-            <p className='contactameTitle' >Gracias por tomarse el tiempo para comunicarse. ¿Cómo puedo ayudarte hoy?</p>   
+            <p className='contactameTitle' >Gracias por tomarse el tiempo para comunicarse. ¿Cómo puedo ayudarte?</p>   
             <form onSubmit={enviarMail} className='form'> 
                 <input type='text'className='entradasCorreo1'id='email'name='email'placeholder='Correo electronico...'/>
                 <input type='text'className='entradasCorreo2'id='email'name='nombre'placeholder='Su nombre...'/>

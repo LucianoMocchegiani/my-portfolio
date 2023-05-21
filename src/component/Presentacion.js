@@ -10,7 +10,7 @@ export default function Presentacion() {
                 
                 <p className='title'>Full Stack Developer</p>
                 <p className='subTitle'>Desarrollo paginas web y apps mobiles de la manera mas optima.</p>
-                <div className='aparecer'><img src={Avatar} width={270} height={'auto'}/></div>
+                <div className='aparecer2Animation'><img src={Avatar} width={270} height={'auto'}/></div>
                 
             </div>
                           

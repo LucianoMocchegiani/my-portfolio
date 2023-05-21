@@ -8,6 +8,7 @@
 .imagen{
   margin-top:10%;
   width: 60%;
+  transform:  translateX(100%);
 }
 .title{
   font-size: 40px;

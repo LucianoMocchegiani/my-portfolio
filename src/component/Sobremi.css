@@ -89,9 +89,7 @@
 .imgIcon{
   width: 40px;
   height: auto;
-  animation-name:aparecer;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+  transform: scale(.2);
 }
 @keyframes color {
   0%{ background-color: #367785; }
@@ -151,4 +149,16 @@
     .respuesta2{
       margin: 0;
     }
+}
+.aparecer2Animation{
+  animation-name:aparecer2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both
+}
+.aparecerAnimation{
+  animation-name:aparecer;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both
 }
