@@ -6,7 +6,7 @@ export default function Sobremi(){
         <div className="divSobremi" id='sobreMi'>
             <div className='text1'>
                 <p className='pregunta'>¿Quien soy?</p> 
-                <p className='respuesta'>Hola soy Luciano Mocchegiani Desarrollador Full Stack, con conocimientos aplicables a proyectos webs y app mobiles, a realizarse de forma escalable y modularizados para optimizar de mejor manera el trabajo en equipo.</p>
+                <p className='respuesta'>Hola soy Luciano Mocchegiani Desarrollador Full Stack, con conocimientos aplicables a proyectos webs y app mobiles, a realizarse de forma escalable y modularizados para optimizar de mejor manera la funcionalidad y el mantenimiento de la app.</p>
             </div>
             {/* <div className='text2'>
                 <p className='pregunta'>¿Por que yo?</p>

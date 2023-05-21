@@ -26,15 +26,18 @@
   transition: 0.6s;
 }
 .card:hover{
-  background-color: #367785;;
+  background-color: #367785;
   font-weight: 400;
   color: white;
   
 }
 .visitar{
   position: absolute;
-  left: 30%;
-  top:42%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
   display:flex ;
   text-align: center;
   align-items: center;
@@ -57,6 +60,7 @@
 
 .visitar:hover{
   background-color: #367785;
+  border-color: #fff;
 }
 
 .card-top h1 {
@@ -89,12 +93,19 @@
     font-size: 12px;
   }
   .card{
-    height: 350px;
+    height: 300px;
   }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .visitar{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+}
 }
 @media screen and (max-width: 480px) {
   .card{
-    height: 380px;
+    height: 300px;
   }
 }
 .slick-next{

@@ -10,8 +10,8 @@ import "slick-carousel/slick/slick-theme.css";
 import {NextArrow, PrevArrow} from './CustomArrowsSlider';
 export default function Misproyectos(){
   const [onHover,setOnHover]= useState({on:false, in:null})
-    const objProyect=[{name:'Henryfood',link:"https://pi-food-yqzu8pfxg-timberli.vercel.app/",imagen:imagen1,resumen:"HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas, utilice las siguientes tecnologias React Redux en el frontend y Node.js, Express.js y Sequelize en el backend."}
-      ,{name:'Timberli',link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   La idea de la app es ser una red social donde software developers Jr puedan subir y exponer su portfolio de proyectos, para mostrarse al mundo y recibir feedback. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. "}
+    const objProyect=[{name:'Henryfood',link:"https://pi-food-yqzu8pfxg-timberli.vercel.app/",imagen:imagen1,resumen:"HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend."}
+      ,{name:'Timberli',link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   Es una red social donde software developers suben y exponen su portfolio de proyectos. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. "}
       ,{name:'BusinesAdmin',link:'https://businessadmin.vercel.app/',imagen:imagen3,resumen:"Busines Admin:   Web y App mobile para gestionar negocios comerciales, las tecnologias principales aplicadas son React , React Native con Expo y Firebase. "}]
 
       var settings = {
