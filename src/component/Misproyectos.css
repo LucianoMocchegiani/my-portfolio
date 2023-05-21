@@ -15,6 +15,7 @@
 }
 
 .card{
+  position: relative;
   border: 1px solid #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -28,7 +29,36 @@
   background-color: #367785;;
   font-weight: 400;
   color: white;
+  
 }
+.visitar{
+  position: absolute;
+  left: 30%;
+  top:42%;
+  display:flex ;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 10, 10, 0.651) ;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #367785;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.card:hover + .visitar{
+  display: none;
+}
+
+.visitar:hover{
+  background-color: #367785;
+}
+
 .card-top h1 {
   font-size: 1rem;
 }
@@ -72,4 +102,6 @@
   color: #367785;
   z-index: 100;
 }
-.slick-prev{}
+.displayNone{
+  display: none;
+}
