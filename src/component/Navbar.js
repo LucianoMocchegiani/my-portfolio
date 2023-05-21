@@ -11,8 +11,10 @@ export default function Navbar() {
   const handleClicked =()=>{
       setClicked(!clicked)
   }
-  console.log(patch)
-  console.log(REACT_APP_PATCH)
+  const contactameFunction=()=>{
+    setClicked(false)
+    navigate('contactame')
+  }
   if(patch===(REACT_APP_PATCH +'/contactame')){
     return (
       <div className={clicked?'container-navBar active-navBar':'container-navBar'}>     
@@ -28,7 +30,7 @@ export default function Navbar() {
             <div className='burger-navBar'><Burger clicked={clicked} handleClicked={handleClicked}/></div>
             <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#sobreMi" ><p className='textButton-Navbar'>Sobre mi</p></a>
             <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#misProyectos" ><p className='textButton-Navbar'>Mis proyectos</p></a>
-            <a className={clicked?'button-navBar':'buttonOculto-navBar'} onClick={()=>navigate('contactame')}><p className='textButton-Navbar contactame'>Contactame</p></a>
+            <a className={clicked?'button-navBar':'buttonOculto-navBar'} onClick={()=>contactameFunction()}><p className='textButton-Navbar contactame'>Contactame</p></a>
     </div>
   )
 }}

@@ -1,0 +1,72 @@
+.trabajar-juntos-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    background-color: #141c3a;
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+.start-project{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hagamoslo{
+    /* width: 20%; */
+    height: 51px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "europa", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8f28bf;
+    padding: 18px;
+    transition: 0.2s;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.hagamoslo p{
+    margin-left: 9px;
+}
+.hagamoslo:hover{
+    background:#8f28bf ;
+}
+
+@media screen and (max-width: 900px) {
+    .hagamoslo{
+        font-size: 16px;
+    }
+    .start-project{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .trabajar-juntos-container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .trabajar-juntos-container{
+        width: 95%;
+    }
+    .hagamoslo{
+        font-size: 12px;
+    }
+    .start-project{
+        font-size: 14px;
+    }
+}

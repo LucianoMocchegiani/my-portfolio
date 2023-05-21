@@ -10,9 +10,10 @@ import "slick-carousel/slick/slick-theme.css";
 import {NextArrow, PrevArrow} from './CustomArrowsSlider';
 export default function Misproyectos(){
   const [onHover,setOnHover]= useState({on:false, in:null})
-    const objProyect=[{name:'Henryfood',link:"https://pi-food-yqzu8pfxg-timberli.vercel.app/",imagen:imagen1,resumen:"HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend."}
-      ,{name:'Timberli',link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   Es una red social donde software developers suben y exponen su portfolio de proyectos. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. "}
-      ,{name:'BusinesAdmin',link:'https://businessadmin.vercel.app/',imagen:imagen3,resumen:"Busines Admin:   Web y App mobile para gestionar negocios comerciales, las tecnologias principales aplicadas son React , React Native con Expo y Firebase. "}]
+    const objProyect=[
+      {name:'Timberli',link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   Es una red social donde software developers suben y exponen su portfolio de proyectos. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend. Tiene autenticación (Oauth2.0), Método de pago implementado con STRIPE. "}
+      ,{name:'BusinesAdmin',link:'https://businessadmin.vercel.app/',imagen:imagen3,resumen:"Busines Admin:   Web y App mobile para gestionar negocios comerciales, las tecnologias principales aplicadas son React , React Native con Expo y Firebase. "},
+      {name:'Henryfood',link:"https://pi-food-yqzu8pfxg-timberli.vercel.app/",imagen:imagen1,resumen:"HenryFood:   Es una app web donde se crean y se visualizan recetas de comidas. Las tecnologías utilizadas: React Redux en el frontend y Node.js, Express.js y Sequelize en el backend."}]
 
       var settings = {
         
@@ -53,7 +54,10 @@ export default function Misproyectos(){
       };
 
     return(<>
-        <h1 className='title-mis-proyectos'id='misProyectos'>Mis proyectos </h1>
+        <div className='cabezaProyectos'>
+          <h1 className='title-mis-proyectos'>Mis proyectos </h1>
+          <p className='subTitle textProyectos' id='misProyectos'>Aquí estan los proyectos en los que he trabajado. Siempre estoy dispuesto a aprender nuevas tecnologias y a trabajar con gente nueva.</p>
+        </div>
         <div className="misproyectos-container"> 
         <Slider {...settings}>
         {objProyect.map((item)=>(

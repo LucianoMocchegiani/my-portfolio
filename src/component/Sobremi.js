@@ -1,17 +1,16 @@
 import react from 'react'
 import './Sobremi.css';
-
+import Imagen from '../pantallas.png'
+import Techs from './Sobremidos'
 export default function Sobremi(){
     return(
         <div className="divSobremi" id='sobreMi'>
+        <div className="divSobremi2">
+
             <div className='text1'>
                 <p className='pregunta'>¿Quien soy?</p> 
                 <p className='respuesta'>Hola soy Luciano Mocchegiani Desarrollador Full Stack, con conocimientos aplicables a proyectos webs y app mobiles, a realizarse de forma escalable y modularizados para optimizar de mejor manera la funcionalidad y el mantenimiento de la app.</p>
             </div>
-            {/* <div className='text2'>
-                <p className='pregunta'>¿Por que yo?</p>
-                <p className='respuesta'>Hay desarrolladores con muy buenas habilidades técnicas en el área. ademas de ser uno de esos,me considero realmente competente, analítico , pongo mucho empeño en la resolución de problemas, y siempre dispuesto a aprender mas, y enseñar lo que se.</p>
-            </div> */}
             <div className='text3'>
                 <p className='pregunta'>Tecnologías y metodologías </p>
                 <div className='respuesta'>
@@ -24,7 +23,10 @@ export default function Sobremi(){
                     <p className='respuesta2'>• Metodologías de trabajo: Scrum, Agile.</p> 
                     <p className='respuesta2'>• Sistemas operativos: Windows, Linux.</p>
                 </div>  
+                
             </div> 
         </div> 
+            <Techs/>
+        </div>
     )
 }

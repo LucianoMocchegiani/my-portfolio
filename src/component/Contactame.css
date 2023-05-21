@@ -105,14 +105,17 @@
     .entradasCorreo1{
       width: 80%;
       height: 52px;
+      font-size: 16px;
     }
   .entradasCorreo2{
       width: 80%;
       height: 52px;
+      font-size: 16px;
     }
   .entradasCorreo3{
       width: 80%;
       height: 134px;
+      font-size: 16px;
     }
   .enviar{
       margin-top: 3%;
