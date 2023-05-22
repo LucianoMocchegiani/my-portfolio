@@ -10,18 +10,18 @@ import ReactIcon from '../React-icon.png';
 import ReduxIcon from '../redux-icon.png';
 import SequalizeIcon from '../sequalize-icon.png';
 import SqlIcon from '../sql-icon.png';
-import {useState } from 'react';
-
+import useScrollXY from '../functions/useScrollXY'
+import useScreenSize from '../functions/useScreenSize'
 
 export default function Sobremi(){
-    const [scrollY, setScrollY]= useState()
-    window.addEventListener('scroll',function(event){
-        var scroll = this.scrollY;
-        setScrollY(scroll)
-    })
+    const {scrollY}= useScrollXY()
+    const {width} = useScreenSize();
+    console.log(width)
+    console.log(scrollY+ 'scrollY')
+    var value = width<=463?670:520;
     return(
         <div className='techsContainer'>
-            {scrollY>=520?
+            {scrollY>=value?
             <>
                 <img className='imgIcon aparecerAnimation'src={JvascriptIcon}/>
                 <img className='imgIcon aparecerAnimation'src={NodeIcon}/>
