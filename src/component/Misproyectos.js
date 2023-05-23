@@ -68,7 +68,7 @@ export default function Misproyectos(){
               
             </div>
             <div className='card-bottom'>
-              <p>{item.resumen}</p>
+              <p className='resumenText'>{item.resumen}</p>
             </div>
           </a>
         ))}

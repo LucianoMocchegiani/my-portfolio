@@ -24,6 +24,7 @@
   color: black;
   font-weight: 400;
   transition: 0.6s;
+  color: rgb(34, 35, 36);
 }
 .card:hover{
   background-color: #367785;
@@ -62,7 +63,10 @@
   background-color: #367785;
   border-color: #fff;
 }
-
+.resumenText{
+  letter-spacing: 1px;
+  font-weight: 600;
+}
 .card-top h1 {
   font-size: 1rem;
 }
