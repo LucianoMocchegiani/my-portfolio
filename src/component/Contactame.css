@@ -25,8 +25,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.entradasCorreo1Div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .entradasCorreo1{
-    width: 30%;
+    width: 100%;
     height: 52px;
     background: transparent;
     border-radius: 6px;
@@ -40,8 +47,15 @@
     font-size: 22px; 
 }
 .entradasCorreo1:focus{outline: none;}
+.entradasCorreo2Div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .entradasCorreo2{
-    width: 30%;
+    width: 100%;
     height: 52px;
     background: transparent;
     border-radius: 6px;
@@ -55,6 +69,13 @@
     font-size: 22px;
 }
 .entradasCorreo2:focus{outline: none;}
+.entradasCorreo3Div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .entradasCorreo3{
     width: 80%;
     height: 134px;
@@ -91,7 +112,15 @@
     background-color: #1a6b91;
     color: white
 }
-
+.redError-container{
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+.redError{
+  font-size: 14px;
+  color:red;
+}
 
 @media screen and (max-width: 700px) {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
@@ -102,21 +131,32 @@
         margin-top: 20%;
         height: auto;
     }
-    .entradasCorreo1{
+    .entradasCorreo1Div{
+      margin-top: 8%;
       width: 80%;
+
+    }
+    .entradasCorreo1{
       height: 52px;
       font-size: 16px;
+    }
+  .entradasCorreo2Div{
+      width: 80%;
+     
     }
   .entradasCorreo2{
+    height: 52px;
+    font-size: 16px;
+  }
+  .entradasCorreo3Div{
       width: 80%;
-      height: 52px;
-      font-size: 16px;
+      margin-bottom: 4%;
     }
   .entradasCorreo3{
-      width: 80%;
-      height: 134px;
-      font-size: 16px;
-    }
+    width: 100%;
+    height: 134px;
+    font-size: 16px;
+  }
   .enviar{
       margin-top: 3%;
       width: 85%;
