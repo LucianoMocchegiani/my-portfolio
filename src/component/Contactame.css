@@ -161,5 +161,6 @@
       margin-top: 3%;
       width: 85%;
       height: 51px;
+      transform: scale(.2);
   }
 }

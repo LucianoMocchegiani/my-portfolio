@@ -106,9 +106,31 @@
   70%{ transform: scale(1.4); }
   100%{ transform: scale(1); }
 }
+@keyframes aparecer {
+  0%{ transform: scale(.2); }
+  70%{ transform: scale(1.4); }
+  100%{ transform: scale(1); }
+}
 @keyframes aparecer2 {
   0%{ transform:  translateX(100%); }
   100%{ transform:  translateX(0%); }
+}
+@keyframes aparecer3 {
+  0%{ transform:  translateY(100%); }
+  100%{ transform:  translateY(0%); }
+}
+@keyframes aparecer4 {
+  0%{ 
+    transform: scale(.2);
+    background-color: #1a6b91;
+    color: white;
+  }
+  70%{ 
+    transform: scale(1.4); 
+    background-color: #1a6b91;
+    color: white;
+  }
+  100%{ transform: scale(1); }
 }
 @media screen and (max-width: 700px) {
   .imgIcon{
@@ -161,6 +183,18 @@
 }
 .aparecerAnimation{
   animation-name:aparecer;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both
+}
+.aparecer3Animation{
+  animation-name:aparecer3;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both
+}
+.aparecer4Animation{
+  animation-name:aparecer4;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both

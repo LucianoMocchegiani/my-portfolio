@@ -8,8 +8,8 @@ export default function Presentacion() {
         <div className="divPresentacion">
             <div className='hola'>
                 
-                <p className='title'>Full Stack Developer</p>
-                <p className='subTitle'>Desarrollo paginas web y apps mobiles de la manera mas optima.</p>
+                <p className='title aparecer3Animation'>Full Stack Developer</p>
+                <p className='subTitle aparecer3Animation'>Desarrollo paginas web y apps mobiles de la manera mas optima.</p>
                 <div className='aparecer2Animation'><img src={Avatar} width={270} height={'auto'}/></div>
                 
             </div>

@@ -75,7 +75,7 @@ export default function Contactame(){
     return(     
         <div className="divContactame">
             <div className='contactameId'id='contactame'></div>
-            <p className='contactameTitle' >Gracias por tomarse el tiempo para comunicarse. ¿Cómo puedo ayudarte?</p>   
+            <p className='contactameTitle aparecer3Animation' >Gracias por tomarse el tiempo para comunicarse. ¿Cómo puedo ayudarte?</p>   
             <form ref={form} onSubmit={sendEmail} className='form'> 
                 <div className='entradasCorreo1Div'>
                     <input onChange={handleChangeText} value={datos.user_email} type='email'className='entradasCorreo1'id='email'name="user_email"placeholder='Correo electronico...'/>
@@ -89,7 +89,7 @@ export default function Contactame(){
                     <input onChange={handleChangeText} value={datos.message} type='text'className='entradasCorreo3'id='message'name="message"placeholder='Escriba su mensaje...'/> 
                     <div className='redError-container'>{validate(datos).message&&formErrors&&<p className='redError'>{validate(datos).message}</p>}</div>
                 </div>
-                <input  type='submit'className='enviar' value='Enviar'/>   
+                <input  type='submit'className='enviar aparecer4Animation' value='Enviar'/>   
             </form>
         </div>
     )
