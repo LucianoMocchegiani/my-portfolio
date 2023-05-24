@@ -9,8 +9,8 @@ export default function Trabajemos(){
     const navigate = useNavigate()
     const {scrollY}= useScrollXY()
     const {width} = useScreenSize();
-    var value = width<=900?880:1500;
-    if (width<=380){value=1250}
+    var value = width<=900?1200:1500;
+    if (width<=380){value=1360}
 
     
 
