@@ -18,7 +18,7 @@ export default function Sobremi(){
     const {width} = useScreenSize();
     console.log(width)
     console.log(scrollY+ 'scrollY')
-    var value = width<=900?520:520;
+    var value = width<=900?720:520;
     return(
         <div className='techsContainer'>
             {scrollY>=value?
