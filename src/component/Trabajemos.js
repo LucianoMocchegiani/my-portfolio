@@ -16,8 +16,8 @@ export default function Trabajemos(){
 
     return(     
         <div className={scrollY>=value?'trabajar-juntos-container aparecer2Animation':'trabajar-juntos-container'}>
-            <p className='start-project'>¿Te interesa trabajar conmigo?</p>
-            <button className='hagamoslo' onClick={()=>navigate('contactame')}><Icon path={mdiHandshakeOutline} size={1} color={'white'}/><p>Hagámoslo</p></button>   
+            <p className='start-project'>Are you interested in working with me?</p>
+            <button className='hagamoslo' onClick={()=>navigate('contactame')}><Icon path={mdiHandshakeOutline} size={1} color={'white'}/><p>let's do it</p></button>   
         </div>
     )
 }

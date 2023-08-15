@@ -9,7 +9,7 @@ export default function Presentacion() {
             <div className='hola'>
                 
                 <p className='title aparecer3Animation'>Full Stack Developer</p>
-                <p className='subTitle aparecer3Animation'>Desarrollo paginas web y apps mobiles de la manera mas optima.</p>
+                <p className='subTitle aparecer3Animation'>I develop web pages and mobile applications in the most optimal way.</p>
                 <div className='aparecer2Animation'><img src={Avatar} width={270} height={'auto'}/></div>
                 
             </div>

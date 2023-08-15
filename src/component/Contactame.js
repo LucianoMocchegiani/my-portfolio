@@ -67,7 +67,7 @@ export default function Contactame(){
         }
         else{
 
-            alertConfirmacion("Enviar Mensaje?",null,emailjsSend)
+            alertConfirmacion("Send message?",null,emailjsSend)
             setFormErrors(false)
         }
     }
@@ -75,21 +75,21 @@ export default function Contactame(){
     return(     
         <div className="divContactame">
             <div className='contactameId'id='contactame'></div>
-            <p className='contactameTitle aparecer3Animation' >Gracias por tomarse el tiempo para comunicarse. ¿Cómo puedo ayudarte?</p>   
+            <p className='contactameTitle aparecer3Animation' >Thank you for taking the time to communicate. How can I help you?</p>   
             <form ref={form} onSubmit={sendEmail} className='form'> 
                 <div className='entradasCorreo1Div'>
-                    <input onChange={handleChangeText} value={datos.user_email} type='email'className='entradasCorreo1'id='email'name="user_email"placeholder='Correo electronico...'/>
+                    <input onChange={handleChangeText} value={datos.user_email} type='email'className='entradasCorreo1'id='email'name="user_email"placeholder='Email adress...'/>
                     <div className='redError-container'>{validate(datos).user_email&&formErrors&&<p className='redError'>{validate(datos).user_email}</p>}</div>
                 </div>
                 <div className='entradasCorreo2Div'>
-                    <input onChange={handleChangeText} value={datos.user_name} type='text'className='entradasCorreo2'id='name'name="user_name"placeholder='Su nombre...'/>
+                    <input onChange={handleChangeText} value={datos.user_name} type='text'className='entradasCorreo2'id='name'name="user_name"placeholder='Your name...'/>
                     <div className='redError-container'>{validate(datos).user_name&&formErrors&&<p className='redError'>{validate(datos).user_name}</p>}</div>
                 </div>
                 <div className='entradasCorreo3Div'>
-                    <input onChange={handleChangeText} value={datos.message} type='text'className='entradasCorreo3'id='message'name="message"placeholder='Escriba su mensaje...'/> 
+                    <input onChange={handleChangeText} value={datos.message} type='text'className='entradasCorreo3'id='message'name="message"placeholder='Write your message...'/> 
                     <div className='redError-container'>{validate(datos).message&&formErrors&&<p className='redError'>{validate(datos).message}</p>}</div>
                 </div>
-                <input  type='submit'className='enviar aparecer4Animation' value='Enviar'/>   
+                <input  type='submit'className='enviar aparecer4Animation' value='Send'/>   
             </form>
         </div>
     )
