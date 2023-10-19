@@ -12,7 +12,7 @@ export default function Misproyectos(){
   const [onHover,setOnHover]= useState({on:false, in:null})
     const objProyect=[
       {name:'Timberli',link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   It is a social network where software developers upload and expose their portfolio of projects. The technologies used: React Redux on the frontend and Node.js, Express.js and Sequelize on the backend. Account with authentication (Oauth2.0), Payment method implemented with STRIPE. "}
-      ,{name:'BusinesAdmin',link:'https://businessadmin.vercel.app/',imagen:imagen3,resumen:"Busines Admin:   Web and mobile app to manage commercial businesses, the main technologies applied are React, React Native with Expo and Firebase. "},
+      ,{name:'BusinesAdmin',link:'https://business-admin.vercel.app/',imagen:imagen3,resumen:"Busines Admin:   Web and mobile app to manage commercial businesses, the main technologies applied are React, React Native with Expo and Firebase. "},
       {name:'Henryfood',link:"https://pi-food-yqzu8pfxg-timberli.vercel.app/",imagen:imagen1,resumen:"HenryFood:   It is a web application where food recipes are created and displayed. The technologies used: React Redux on the frontend and Node.js, Express.js and Sequelize on the backend."}]
 
       var settings = {
