@@ -66,14 +66,17 @@ export default function Misproyectos(){
         <Slider {...settings}>
         {objProyect.map((item)=>(
           <a className='card' key={item.name+'1'} href={item.link} target="_blank" onMouseEnter={()=>setOnHover({on:true, in:item.name+'1'})} onMouseLeave={()=>setOnHover({on:false, in:null})}>
+            {item.mobile?<div className='card-bottom'>
+              <p className='resumenText'>{item.resumen}</p>
+            </div>:null}
             {onHover.on&&<p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>{item.mobile?'Dowload Apk for android':'Visit web site'}</p>}
             <div className='card-top'>
               <img src={item.imagen} alt={item.name} width={'500px'} height={'250'}/>
               
             </div>
-            <div className='card-bottom'>
+            {!item.mobile?<div className='card-bottom'>
               <p className='resumenText'>{item.resumen}</p>
-            </div>
+            </div>:null}
           </a>
         ))}
         </Slider>
