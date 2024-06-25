@@ -68,7 +68,7 @@ export default function Misproyectos(){
           <a className='card' key={item.name+'1'} href={item.link} target="_blank" onMouseEnter={()=>setOnHover({on:true, in:item.name+'1'})} onMouseLeave={()=>setOnHover({on:false, in:null})}>
             {onHover.on&&<p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>Visitar sitio web</p>}
             <div className='card-top'>
-              <img src={item.imagen} alt={item.name} width={'500px'} height={'auto'}/>
+              <img src={item.imagen} alt={item.name} width={'500px'} height={'250'}/>
               
             </div>
             <div className='card-bottom'>
