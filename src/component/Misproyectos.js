@@ -4,7 +4,7 @@ import imagen3 from '../business-admin-imagen.png'
 import imagen2 from '../timberli-project.png'
 import imagen1 from '../henry-food.png'
 import imagen4 from './movieyseries.jpeg'
-import imagen5 from './oderapp.jpeg'
+import imagen5 from './orderapp.jpeg'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
