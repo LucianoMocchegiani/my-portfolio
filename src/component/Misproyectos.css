@@ -55,11 +55,40 @@
   font-weight: 600;
   transition: 0.3s;
 }
+.visitartwo{
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+  display:flex ;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 10, 10, 0.651) ;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #367785;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
 .card:hover + .visitar{
+  display: none;
+}
+.card:hover + .visitartwo{
   display: none;
 }
 
 .visitar:hover{
+  background-color: #367785;
+  border-color: #fff;
+}
+.visitartwo:hover{
   background-color: #367785;
   border-color: #fff;
 }
@@ -105,7 +134,12 @@
     width: 150px;
     height: 40px;
     font-size: 14px;
-}
+  }
+  .visitartwo{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 480px) {
   .card{
