@@ -4,6 +4,7 @@ import Icon from '@mdi/react';
 import { mdiHandshakeOutline } from '@mdi/js';
 import useScreenSize from '../functions/useScreenSize'
 import useScrollXY from '../functions/useScrollXY'
+import whatsapp from '../whatsapp-white.png'
 
 export default function Trabajemos(){
     const navigate = useNavigate()
@@ -17,7 +18,7 @@ export default function Trabajemos(){
     return(     
         <div className={scrollY>=value?'trabajar-juntos-container aparecer2Animation':'trabajar-juntos-container'}>
             <p className='start-project'>Are you interested in working with me?</p>
-            //<a href="https://wa.me/1127126514" target="_blank"><img className='icon5 footerIcon' src={whatsapp} alt="whatsapp"/></a>
+            <a href="https://wa.me/1127126514" target="_blank"><img className='icon5 footerIcon' src={whatsapp} alt="whatsapp"/></a>
             <button className='hagamoslo' onClick={()=>navigate('contactame')}><Icon path={mdiHandshakeOutline} size={1} color={'white'}/><p>let's do it</p></button>   
         </div>
     )
