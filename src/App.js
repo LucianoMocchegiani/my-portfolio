@@ -20,7 +20,7 @@ function Footer(){
               <a href="https://github.com/LucianoMocchegiani" target="_blank"><img className='icon2 footerIcon' src={github} alt="github"/></a>
               <a href="https://instagram.com/mocchegianiluciano" target="_blank"><img className='icon3 footerIcon' src={instagran} alt="instagran"/></a>
               <a href="https://twitter.com/luciano4444444" target="_blank"><img className='icon4 footerIcon' src={twiter} alt="twiter"/></a>
-              <a href="https://wa.me/1164897908" target="_blank"><img className='icon5 footerIcon' src={whatsapp} alt="whatsapp"/></a>
+              <a href="https://wa.me/1127126514" target="_blank"><img className='icon5 footerIcon' src={whatsapp} alt="whatsapp"/></a>
           </div>
       <p className='footertext'>© Luciano Mocchegiani - 2022</p>
     </div>
