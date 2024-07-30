@@ -70,7 +70,7 @@ export default function Misproyectos(){
               <p className='resumenText'>{item.resumen}</p>
             </div>:null}
             {onHover.on&&<a href={item.link} target="_blank"><p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>{item.mobile?'Dowload Apk for android':'Visit web site'}</p></a>}
-              {onHover.on&&<a href={item.github} target="_blank"><p key={item.name+'2'} className={onHover.in===item.name+'2'?'visitartwo':'displayNonetwo'}>{'Visit code on github'}</p></a>}
+              {onHover.on&&<a href={item.github} target="_blank"><p key={item.name+'2'} className={onHover.in===item.name+'2'?'visitartwo':'displayNone'}>{'Visit code on github'}</p></a>}
             <div className='card-top'>
               <img src={item.imagen} alt={item.name} width={'500px'} height={'250'}/>
               
