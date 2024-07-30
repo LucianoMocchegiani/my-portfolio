@@ -65,12 +65,12 @@ export default function Misproyectos(){
         <div className="misproyectos-container"> 
         <Slider {...settings}>
         {objProyect.map((item)=>(
-          <div className='card' key={item.name+'1'} target="_blank" onMouseEnter={()=>setOnHover({on:true, in:item.name+'1'})} onMouseLeave={()=>setOnHover({on:false, in:null})}>
+          <div className='card' key={item.name+'1'} onMouseEnter={()=>setOnHover({on:true, in:item.name+'1'})} onMouseLeave={()=>setOnHover({on:false, in:null})}>
             {item.mobile?<div className='card-bottom'>
               <p className='resumenText'>{item.resumen}</p>
             </div>:null}
-            {onHover.on&&<a href={item.link} ><p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>{item.mobile?'Dowload Apk for android':'Visit web site'}</p></a>}
-              {onHover.on&&<a href={item.github} ><p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>{'Visit code on github'}</p></a>}
+            {onHover.on&&<a href={item.link} target="_blank"><p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>{item.mobile?'Dowload Apk for android':'Visit web site'}</p></a>}
+              {onHover.on&&<a href={item.github} target="_blank"><p key={item.name+'1'} className={onHover.in===item.name+'1'?'visitar':'displayNone'}>{'Visit code on github'}</p></a>}
             <div className='card-top'>
               <img src={item.imagen} alt={item.name} width={'500px'} height={'250'}/>
               
