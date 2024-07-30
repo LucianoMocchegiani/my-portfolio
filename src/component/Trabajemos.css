@@ -75,6 +75,10 @@
     .trabajar-juntos-container{
         width: 90%;
     }
+    .footerIcon{
+        width: 20px;
+        height: 20px;
+    }
 }
 @media screen and (max-width: 550px) {
     .trabajar-juntos-container{
