@@ -13,7 +13,7 @@ import {NextArrow, PrevArrow} from './CustomArrowsSlider';
 export default function Misproyectos(){
   const [onHover,setOnHover]= useState({on:false, in:null})
     const objProyect=[
-      {name:'Movies&SeriesWebApp',link:"https://entertainment-web-app-ten-psi.vercel.app/", imagen:imagen6, resumen: "Movies and series app:app developed with react/next and firebase.", github:'https://github.com/LucianoMocchegiani/enterteinment-web-app'},
+      {name:'Movies&SeriesWebApp',link:"https://entertainment-web-app-ten-psi.vercel.app/", imagen:imagen6, resumen: "Movies and series app:app developed with react/next and firebase.", github:'https://github.com/LucianoMocchegiani/entertainment-web-app'},
        {name:'Movies&SeriesApp',link:"https://expo.dev/artifacts/eas/c63mXaD4p77QbUfT8xdRPs.apk", imagen:imagen4, resumen: "Movies and series app:app developed with react native, expo, firebase.", mobile:true, github:'https://github.com/LucianoMocchegiani/enterteinment-mobile-app'},
        {name:'OrderStoreApp',link:"https://expo.dev/artifacts/eas/jGKgozWyeyWPLzwadd8gYM.apk", imagen:imagen5, resumen: "App to make and manage purchase orders.",  mobile:true, github:'https://github.com/LucianoMocchegiani/ordering-mobile-app'},
       {name:'Timberli',link:"https://proyecto-final-orcin-seven.vercel.app/", imagen:imagen2, resumen: "Timberli:   It is a social network where software developers upload and expose their portfolio of projects. The technologies used: React Redux on the frontend and Node.js, Express.js and Sequelize on the backend. Account with authentication (Oauth2.0), Payment method implemented with STRIPE. ",github:'https://github.com/LucianoMocchegiani/academic-final-project'}
