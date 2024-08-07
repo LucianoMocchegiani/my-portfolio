@@ -3,7 +3,7 @@ import './Misproyectos.css';
 import imagen3 from '../businessadminweb-image.PNG'
 import imagen2 from '../timberli-project.png'
 import imagen1 from '../henry-food.png'
-import imagen4 from './movieyseries.jpeg'
+import imagen4 from '../movieapp-image.png'
 import imagen5 from './orderapp.jpeg'
 import imagen6 from '../movienightweb-image.PNG'
 import Slider from "react-slick";
