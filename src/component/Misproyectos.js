@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Misproyectos.css';
-import imagen3 from '../business-admin-imagen.png'
+import imagen3 from '../businessadminweb-image.PNG'
 import imagen2 from '../timberli-project.png'
 import imagen1 from '../henry-food.png'
 import imagen4 from './movieyseries.jpeg'
