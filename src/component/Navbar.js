@@ -29,7 +29,7 @@ export default function Navbar() {
     <div className={clicked?'container-navBar active-navBar':'container-navBar'}>     
             {!clicked&& <img  onClick={()=>navigate('/')} className='buttonHome' src={Avatar} width={45} height={'auto'}/>}
             <div className='burger-navBar'><Burger clicked={clicked} handleClicked={handleClicked}/></div>
-            <DowloadCv/>
+            <DowloadCv clicked={clicked}/>
             <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#sobreMi" ><p className='textButton-Navbar'>About me</p></a>
             <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="#misProyectos" ><p className='textButton-Navbar'>My projects</p></a>
             <a className={clicked?'button-navBar':'buttonOculto-navBar'} onClick={()=>contactameFunction()}><p className='textButton-Navbar contactame'>Contact me</p></a>
