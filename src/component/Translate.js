@@ -29,6 +29,12 @@ const TranslateButtons = ({ clicked }) => {
         <p className='textButton-Navbar'>Spanish</p>
       </button>
       <button 
+        className={clicked ? 'button-navBar' : 'buttonOculto-navBar'}
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center'
+        }}
         onClick={handleReset}>
         <p className='textButton-Navbar'>English</p>
       </button>
