@@ -42,7 +42,7 @@ export default function Contactame(){
     const [formErrors, setFormErrors] = useState(false)
   
     const emailjsSend = async ()=>{
-        await emailjs.sendForm('service_7vp5zlj', 'template_0vl1hsg', form.current, '_ZfQzwicAJcI7E1ev')
+        await emailjs.sendForm('service_lc7hwcr', 'template_0vl1hsg', form.current, '_ZfQzwicAJcI7E1ev')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
