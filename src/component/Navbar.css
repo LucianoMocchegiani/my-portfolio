@@ -147,6 +147,7 @@
   }
 }
 .buttonHome{
+  margin-top: 24px;
   position: absolute;
   width: 45px;
   height: auto;
