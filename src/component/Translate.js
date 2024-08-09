@@ -23,7 +23,8 @@ const TranslateButtons = ({ clicked }) => {
         style={{
           display: 'flex',
           flexDirection: 'row',
-          alignItems: 'center'
+          alignItems: 'center',
+          justifyContent:'center'
         }}
         onClick={() => handleTranslate('es')}>
         <p className='textButton-Navbar'>Spanish</p>
@@ -33,7 +34,8 @@ const TranslateButtons = ({ clicked }) => {
         style={{
           display: 'flex',
           flexDirection: 'row',
-          alignItems: 'center'
+          alignItems: 'center',
+          justifyContent:'center'
         }}
         onClick={handleReset}>
         <p className='textButton-Navbar'>English</p>
