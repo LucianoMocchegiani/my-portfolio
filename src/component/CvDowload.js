@@ -6,7 +6,12 @@ import './Navbar.css';
 const DownloadCV = ({clicked = false}) => {
   return (
     <div>
-      <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="/Luciano Mocchegiani cv 2024.pdf" download="Luciano Mocchegiani cv 2024.pdf">
+      <a className={clicked?'button-navBar':'buttonOculto-navBar'} href="/Luciano Mocchegiani cv 2024.pdf" download="Luciano Mocchegiani cv 2024.pdf"
+       style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center', 
+            }}>
         <p className='textButton-Navbar'>Download My CV </p> <Icon path={mdiFilePdfBox} size={1} />
       </a>
     </div>
