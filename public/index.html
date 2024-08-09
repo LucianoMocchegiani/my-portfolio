@@ -23,9 +23,28 @@
 
     <!-- Custom CSS to Add Padding -->
     <style type="text/css">
-      /* Add padding-top to body to accommodate the Google Translate bar */
       body {
-        padding-top: 20px; /* Adjust this value as needed */
+        padding-top: 20px; 
+        padding-bottom: 100px; /* Ajusta este valor según sea necesario */
+      }
+      /* Hide the specific elements added by Google Translate */
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+      .goog-te-menu-frame {
+        display: none !important;
+      }
+      .goog-te-gadget {
+        display: none !important;
+      }
+      .goog-te-gadget-simple {
+        display: none !important;
+      }
+      .goog-te-menu2 {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
       }
     </style>
   </head>
