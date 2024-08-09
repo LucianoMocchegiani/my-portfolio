@@ -13,7 +13,7 @@ const DownloadCV = ({ clicked = false }) => {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        width: clicked ? 'auto' : '100%' // Ajusta el ancho según el estado
+        width: '100%' // Ajusta el ancho según el estado
       }}
     >
       <p className='textButton-Navbar'>Download CV</p>
