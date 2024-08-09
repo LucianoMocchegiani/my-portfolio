@@ -9,14 +9,11 @@ const DownloadCV = ({ clicked = false }) => {
       className={clicked ? 'button-navBar' : 'buttonOculto-navBar'}
       href="/Luciano Mocchegiani cv 2024.pdf"
       download="Luciano Mocchegiani cv 2024.pdf"
-      style={clicked?{
+      style={{
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
-        width:'100%'
-      }:{ display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center'}}
+        alignItems: 'center'
+      }}
     >
       <p className='textButton-Navbar'>Download CV</p>
       <Icon path={mdiFilePdfBox} size={1} />
