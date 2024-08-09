@@ -12,7 +12,7 @@ const DownloadCV = ({clicked = false}) => {
               flexDirection: 'row',
               alignItems: 'center', 
             }}>
-        <p className='textButton-Navbar'>Download My CV </p> <Icon path={mdiFilePdfBox} size={1} />
+        <p className='textButton-Navbar'>Download CV </p> <Icon path={mdiFilePdfBox} size={1} />
       </a>
     </div>
   );
