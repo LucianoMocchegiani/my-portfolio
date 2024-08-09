@@ -12,7 +12,8 @@ const DownloadCV = ({ clicked = false }) => {
       style={{
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent:'center'
       }}
     >
       <p className='textButton-Navbar'>Download CV</p>
