@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 
 const TranslateButtons = () => {
   const handleTranslate = (lang) => {
@@ -13,10 +14,22 @@ const TranslateButtons = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => handleTranslate('es')}>Translate to Spanish</button>
-      <button onClick={handleReset}>Back to English</button>
-    </div>
+        <>
+          <button 
+            className={clicked ? 'button-navBar' : 'buttonOculto-navBar'}
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center'
+            }}
+              onClick={() => handleTranslate('es')}>
+             <p className='textButton-Navbar'>Spanish</p>/button>
+          <button 
+              onClick={handleReset}>
+              <p className='textButton-Navbar'>English</p>
+          </button>
+      </>
+
   );
 };
 
