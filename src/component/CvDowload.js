@@ -13,10 +13,10 @@ const DownloadCV = ({ clicked = false }) => {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
+        width:'100%'
       }:{ display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
-        width:'100%'}}
+        alignItems: 'center'}}
     >
       <p className='textButton-Navbar'>Download CV</p>
       <Icon path={mdiFilePdfBox} size={1} />
