@@ -3,14 +3,17 @@ import './Navbar.css';
 
 const TranslateButtons = ({ clicked }) => {
   const handleTranslate = (lang) => {
-    // Abre la página traducida en una nueva pestaña
-    const url = `https://translate.google.com/translate?hl=${lang}&sl=auto&tl=${lang}&u=${encodeURIComponent(window.location.href)}`;
-    window.open(url, '_blank');
+    // Cambia el idioma en el widget de Google Translate
+    const translateElement = document.querySelector('.goog-te-combo');
+    if (translateElement) {
+      translateElement.value = lang;
+      translateElement.dispatchEvent(new Event('change'));
+    }
   };
 
   const handleReset = () => {
-    // Abre la página original en una nueva pestaña
-    window.open(window.location.href, '_blank');
+    // Vuelve al idioma original en el widget de Google Translate
+    handleTranslate('en');
   };
 
   return (
