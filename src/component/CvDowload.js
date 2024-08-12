@@ -7,7 +7,7 @@ const DownloadCV = ({ clicked = false }) => {
   return (
     <a
       className={clicked ? 'button-navBar' : 'buttonOculto-navBar'}
-      href="/Luciano Mocchegiani cv 2024.pdf"
+      href="/Luciano Mocchegiani 2024 CV.pdf"
       download="Luciano Mocchegiani cv 2024.pdf"
       style={{
         display: 'flex',
